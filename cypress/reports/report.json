@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-13T07:16:31.036Z",
+    "end": "2021-09-13T07:17:11.657Z",
+    "duration": 40621,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "139842bc-0f6b-43a7-8650-3b6b4acec39b",
+      "title": "",
+      "fullFile": "cypress/integration/examples/1-BranchUser.feature",
+      "file": "cypress/integration/examples/1-BranchUser.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2997baba-596a-47c2-af06-6c37ac0cb3c7",
+          "title": "Branch User Task",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login MBL CI",
+              "fullTitle": "Branch User Task Login MBL CI",
+              "timedOut": null,
+              "duration": 38775,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 35000ms: Expected to find element: `//button[text()=' New Application ']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 35000ms: Expected to find element: `//button[text()=' New Application ']`, but never found it.\n    at Context.eval (http://losci.qa.mbl.systemsltd.com/__cypress/tests?p=cypress\\integration\\examples\\1-BranchUser.feature:112:8)",
+                "diff": null
+              },
+              "uuid": "4601cb10-01d4-4c4f-81b6-33ab7ce5b910",
+              "parentUUID": "2997baba-596a-47c2-af06-6c37ac0cb3c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4601cb10-01d4-4c4f-81b6-33ab7ce5b910"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38775,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "testFiles": "**/*.feature",
+    "defaultCommandTimeout": 35000,
+    "viewportWidth": 1200,
+    "viewportHeight": 800,
+      
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+    },
+    "video": false
+}
